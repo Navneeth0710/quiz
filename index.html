@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>quiz</title>
+  </head>
+  <body>
+    <script>
+      const q = {};
+      q[1] = "October 4, 1957";
+      q[2] = "Soviet Union's launch of Sputnik 1";
+      q[3] = "384400 km";
+      q[4] = " Dr. B.R. Ambedkar";
+      q[5] = "1945";
+      q[6] = "lica";
+      
+        const submitAnswer = (id) => {
+        const input = document.getElementById("q" + id);
+        const userAns = input.value.toLowerCase();
+        const ans = document.getElementById("" + id + id);
+
+        if (userAns === q[id]) {
+          ans.innerText = "Correct ";
+        } else {
+          ans.innerText = "Incorrect.  Correct answer: " + q[id];
+        }
+      };
+    </script>
+
+    When was the first space mission conducted?
+    <input type="text" id="q1" />
+    <button onclick="submitAnswer(1)">Submit</button>
+    <h2 id="11"></h2>
+
+    What was its name?
+    <input type="text" id="q2" />
+    <button onclick="submitAnswer(2)">Submit</button>
+    <h2 id="22"></h2>
+
+    what is the distance from earth to moon?
+    <input type="text" id="q3" />
+    <button onclick="submitAnswer(3)">Submit</button>
+    <h2 id="33"></h2>
+
+    who designed the constituation of India?
+    <input type="text" id="q4" />
+    <button onclick="submitAnswer(4)">Submit</button>
+    <h2 id="44"></h2>
+
+    when was the first computer made?
+    <input type="text" id="q5" />
+    <button onclick="submitAnswer(5)">Submit</button>
+    <h2 id="55"></h2>
+
+    what is the worlds first dog name to enter space?
+    <input type="text" id="q6" />
+    <button onclick="submitAnswer(6)">Submit</button>
+    <h2 id="66"></h2>
+
+  </body>
+</html>
